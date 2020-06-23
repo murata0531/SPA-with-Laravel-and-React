@@ -1,7 +1,10 @@
+//reactのライブラリをインポート
 import React from 'react';
 import ReactDOM from 'react-dom';
+//BrouserRouterというライブラリをRouterという名前でいポート
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
+//それぞれ独立したファイルをインポート
 import NavBar from './NavBar'
 import About from './About'
 import User from './User'
