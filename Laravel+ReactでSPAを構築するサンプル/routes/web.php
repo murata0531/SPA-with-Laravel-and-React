@@ -13,12 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//{any}を設定しておくことで、存在しないアドレスにアクセスしてもルートが表示される
 Route::get('/{any}', function () {
     return view('welcome');
 })->where('any','.*');
 
 Auth::routes();
 
+//localhost:8080/userにアクセスした際に、usersテーブルから要素を取り出してjson形式で値を渡す
 Route::get('/user',function (Request $request) {
 	
 	$users = App\User::all();
