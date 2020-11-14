@@ -1,6 +1,9 @@
 # LaravelとReactでSPAを構築するサンプル
 
 php artisan key:generate
+cp .env.example .env
+composer update
+npm install
 
 react-router-domを使用してSPAを構築するサンプル
 
